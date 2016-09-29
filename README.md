@@ -5,22 +5,22 @@ Shippable CI image for Java on Ubuntu 14.04. Available jdk versions:
 
 1. openjdk6
 2. openjdk7
-3. oraclejdk7
-4. oraclejdk8
+3. openjdk8
+4. oraclejdk7
+5. oraclejdk8
 
-## Services:
+**Services:**
 
-1. cassandra 2.1
-2. elasticsearch 1.5
-3. memcached 1.4
-4. mongodb 3.0
-5. mysql 5.6
-6. neo4j 2.2
-7. postgres 9.4
-8. rabbitmq 3.5
-9. redis 3.0
-10. selenium 2.45
-11. sqllite 3
-12. couchdb 1.6
-13. rethinkdb 2.0
-14. riak latest
+1. elasticsearch 2.4
+2. memcached 1.4
+3. mongodb 3.2
+4. mysql 5.6
+5. neo4j 3.0
+6. postgres 9.4
+7. rabbitmq 3.6
+8. redis 3.0
+9. selenium 2.53
+10. sqllite 3
+11. couchdb 1.6
+12. rethinkdb 2.3
+13. riak latest
