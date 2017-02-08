@@ -22,11 +22,11 @@ echo "================ Installing apache-ant-1.10.1 ================="
 wget http://redrockdigimark.com/apachemirror/ant/binaries/apache-ant-1.10.1-bin.tar.gz
 tar xzf apache-ant-1.10.0-bin.tar.gz -C /usr/local && rm -f apache-ant-1.10.1-bin.tar.gz
 ln -fs /usr/local/apache-ant-1.10.0/bin/ant /usr/bin
-echo 'export ANT_HOME=/usr/local/apache-ant-1.10.0' >> $HOME/.bashrc
-echo 'export PATH=$PATH:/usr/local/apache-ant-1.10.0/bin' >> $HOME/.bashrc
+echo 'export ANT_HOME=/usr/local/apache-ant-1.10.1' >> $HOME/.bashrc
+echo 'export PATH=$PATH:/usr/local/apache-ant-1.10.1/bin' >> $HOME/.bashrc
 
-echo "deb http://security.ubuntu.com/ubuntu xenial main restricted universe multiverse" >> /etc/apt/sources.list
-echo "deb http://security.ubuntu.com/ubuntu xenial-security main restricted universe multiverse" >> /etc/apt/sources.list
+echo "deb http://security.ubuntu.com/ubuntu trusty main restricted universe multiverse" >> /etc/apt/sources.list
+echo "deb http://security.ubuntu.com/ubuntu trusty-security main restricted universe multiverse" >> /etc/apt/sources.list
 sudo apt-get update
 
 for file in /u14javall/version/*;
