@@ -18,9 +18,9 @@ sudo tar xzf apache-maven-3.3.9-bin.tar.gz -C /usr/local && rm -f apache-maven-3
 ln -fs /usr/local/apache-maven-3.3.9/bin/mvn /usr/bin
 echo 'export PATH=$PATH:/usr/local/apache-maven-3.3.9/bin' >> $HOME/.bashrc
 
-echo "================ Installing apache-ant-1.10.0 ================="
-wget http://redrockdigimark.com/apachemirror/ant/binaries/apache-ant-1.10.0-bin.tar.gz
-tar xzf apache-ant-1.10.0-bin.tar.gz -C /usr/local && rm -f apache-ant-1.10.0-bin.tar.gz
+echo "================ Installing apache-ant-1.10.1 ================="
+wget http://redrockdigimark.com/apachemirror/ant/binaries/apache-ant-1.10.1-bin.tar.gz
+tar xzf apache-ant-1.10.0-bin.tar.gz -C /usr/local && rm -f apache-ant-1.10.1-bin.tar.gz
 ln -fs /usr/local/apache-ant-1.10.0/bin/ant /usr/bin
 echo 'export ANT_HOME=/usr/local/apache-ant-1.10.0' >> $HOME/.bashrc
 echo 'export PATH=$PATH:/usr/local/apache-ant-1.10.0/bin' >> $HOME/.bashrc
