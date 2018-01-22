@@ -12,4 +12,4 @@ Shippable CI image for Java on Ubuntu 14.04. Available jdk versions:
 
 **Services:**
 
-use this link github.com/dry-dock/u14all to refer to the versions of the services
+use this link http://github.com/dry-dock/u14all to refer to the versions of the services
