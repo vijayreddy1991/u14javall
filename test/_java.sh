@@ -15,6 +15,11 @@ update-alternatives --set java /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
 java -version
 printf "\n"
 
+echo "update-alternatives --set java /usr/lib/jvm/java-9-openjdk-amd64/bin/java"
+update-alternatives --set java /usr/lib/jvm/java-9-openjdk-amd64/bin/java
+java -version
+printf "\n"
+
 echo "update-alternatives --set java /usr/lib/jvm/java-9-oracle/bin/java"
 update-alternatives --set java /usr/lib/jvm/java-9-oracle/bin/java
 java -version
