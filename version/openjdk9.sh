@@ -2,6 +2,7 @@
 
 echo "================ Installing openjava9-installer ================="
 
+OPENJDK9_VER=9.0.4
 cd /usr/lib/jvm
 wget http://download.java.net/java/GA/jdk9/"$OPENJDK9_VER"/binaries/openjdk-"$OPENJDK9_VER"_linux-x64_bin.tar.gz
 tar -xzf openjdk-"$OPENJDK9_VER"_linux-x64_bin.tar.gz
