@@ -5,3 +5,4 @@ echo oracle-java10-installer shared/accepted-oracle-license-v1-1 select true | d
 sudo add-apt-repository -y ppa:linuxuprising/java
 sudo apt-get update
 sudo apt-get install -y oracle-java10-installer
+sudo apt-get install oracle-java10-set-default
