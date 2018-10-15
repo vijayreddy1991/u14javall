@@ -1,4 +1,4 @@
 #!/bin/bash -e
-
-echo "================ Installing openjdk-7-jdk ================="
-apt-get install -y openjdk-7-jdk
+export OPEN_JDK=7
+echo "================ Installing openjdk-"$OPEN_JDK"-jdk ================="
+apt-get install -y openjdk-"$OPEN_JDK"-jdk
