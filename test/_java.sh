@@ -25,6 +25,6 @@ shipctl jdk set oraclejdk8
 java -version
 printf "\n"
 
-shipctl jdk set oraclejdk11.0.1
+shipctl jdk set oraclejdk11
 java -version
 printf "\n"
