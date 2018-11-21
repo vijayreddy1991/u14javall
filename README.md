@@ -8,8 +8,10 @@ Shippable CI image for Java on Ubuntu 14.04. Available jdk versions:
 3. openjdk10
 4. openjdk11
 5. oraclejdk8
-6. oraclejdk11
+6. oraclejdk11.0.1
 
+u14javall Docker Hub repo: [drydock/u14javall](https://hub.docker.com/r/drydock/u14javall/)
+  
 **Services:**
 
-use this link http://github.com/dry-dock/u14all to refer to the versions of the services
+Please refer [u14all](https://github.com/dry-dock/u14all) for a list of supported services
