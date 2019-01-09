@@ -10,7 +10,7 @@ jdk:
  
 build:
   pre_ci:
-    - docker build -t=drydock/u14javall:dev
+    - docker build -t=drydock/u14javall:dev .
   
   pre_ci_boot:
     image_name: drydock/u14javall
