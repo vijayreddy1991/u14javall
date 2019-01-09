@@ -1,0 +1,25 @@
+language: java
+
+jdk:
+  - openjdk7
+  - openjdk8
+  - openjdk10
+  - openjdk11
+  - oraclejdk11
+  - oraclejdk8
+ 
+build:
+  pre_ci:
+    - docker build -t=drydock/u14javall:dev
+  
+  pre_ci_boot:
+    image_name: drydock/u14javall
+    image_tag: dev
+    pull: false
+    
+  ci:
+    - java -version
+    - mvn --version    
+    - gradle --version
+    - ant -version 
+    
