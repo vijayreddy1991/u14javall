@@ -49,6 +49,10 @@ echo 'export ANDROID_SDK=/opt/android-sdk/tools/bin' >> /etc/drydock/.env
 
 echo 'export PATH=$PATH:/opt/android-sdk/tools/bin' >> /etc/drydock/.env
 
+echo 'export PATH=$PATH:/root/.sdkman/candidates/maven/current/bin' >> /etc/drydock/.env
+echo 'export PATH=$PATH:/root/.sdkman/candidates/ant/current/bin' >> /etc/drydock/.env
+echo 'export PATH=$PATH:/root/.sdkman/candidates/gradle/current/bin' >> /etc/drydock/.env
+
 wget http://central.maven.org/maven2/com/github/triplet/gradle/play-publisher/1.2.0/play-publisher-1.2.0.jar
 mkdir -p /opt/android-plugins
 mv play-publisher-1.2.0.jar /opt/android-plugins/
