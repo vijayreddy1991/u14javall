@@ -8,6 +8,8 @@ sudo apt-get update
 
 curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
+echo "source $HOME/.sdkman/bin/sdkman-init.sh" >> /etc/drydock/.env
+
 sdk install gradle 4.10.3
 yes | sdk install gradle 5.1
 
@@ -48,10 +50,6 @@ echo 'export ANDROID_HOME=/opt/android-sdk' >> /etc/drydock/.env
 echo 'export ANDROID_SDK=/opt/android-sdk/tools/bin' >> /etc/drydock/.env
 
 echo 'export PATH=$PATH:/opt/android-sdk/tools/bin' >> /etc/drydock/.env
-
-echo 'export PATH=$PATH:/root/.sdkman/candidates/maven/current/bin' >> /etc/drydock/.env
-echo 'export PATH=$PATH:/root/.sdkman/candidates/ant/current/bin' >> /etc/drydock/.env
-echo 'export PATH=$PATH:/root/.sdkman/candidates/gradle/current/bin' >> /etc/drydock/.env
 
 wget http://central.maven.org/maven2/com/github/triplet/gradle/play-publisher/1.2.0/play-publisher-1.2.0.jar
 mkdir -p /opt/android-plugins
