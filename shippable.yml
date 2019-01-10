@@ -19,7 +19,8 @@ build:
     
   ci:
     - java -version
-    - source /etc/drydock/.env
+#     - source /etc/drydock/.env
+    - export PATH="$PATH:/root/.sdkman/candidates/gradle/current/bin"
     - gradle --version
     - mvn --version  
     - if [ "$SHIPPABLE_JDK_VERSION" == "openjdk7" ] || [ "$SHIPPABLE_JDK_VERSION" == "oraclejdk7" ]; then
