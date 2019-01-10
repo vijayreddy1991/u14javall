@@ -19,9 +19,10 @@ build:
     
   ci:
     - java -version
+    - source /etc/drydock/.env
     - gradle --version
     - mvn --version  
-    - source /etc/drydock/.env
+    - 
     - if [ "$SHIPPABLE_JDK_VERSION" == "openjdk7" ] || [ "$SHIPPABLE_JDK_VERSION" == "oraclejdk7" ]; then
         sdk use ant 1.9.9
         sdk use gradle 4.10.3
