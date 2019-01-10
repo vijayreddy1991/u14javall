@@ -21,12 +21,11 @@ build:
     - java -version
 #     - source /etc/drydock/.env
     - export PATH="$PATH:/root/.sdkman/candidates/gradle/current/bin"
-    - gradle --version
     - mvn --version  
     - if [ "$SHIPPABLE_JDK_VERSION" == "openjdk7" ] || [ "$SHIPPABLE_JDK_VERSION" == "oraclejdk7" ]; then
         sdk use ant 1.9.9
         sdk use gradle 4.10.3
-     # fi
+      fi
     - gradle --version
     - ant -version 
     
