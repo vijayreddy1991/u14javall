@@ -13,9 +13,9 @@ build:
     - docker build -t=drydock/u14javall:dev .
   
   pre_ci_boot:
-    image_name: vijaydocker1991/javaimage
-    image_tag: latest
-    pull: true
+    image_name: drydock/u14javall
+    image_tag: dev
+    pull: false
     
   ci:
     - java -version
