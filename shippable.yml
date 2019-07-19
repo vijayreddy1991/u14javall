@@ -1,0 +1,8 @@
+pipelines:
+  - name: vijaybash
+    steps:
+      - name: step_u16
+        type: Bash
+        execution:
+          onExecute:
+            - printenv
