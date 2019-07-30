@@ -6,3 +6,4 @@ pipelines:
         execution:
           onExecute:
             - printenv
+            - ls
