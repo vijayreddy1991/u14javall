@@ -1,5 +1,5 @@
 pipelines:
-  - name: vijaybash
+  - name: vijaybashtest
     steps:
       - name: step_u16
         type: Bash
